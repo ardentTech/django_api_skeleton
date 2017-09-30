@@ -1,6 +1,6 @@
 # Django API Skeleton
 
-An Python3.x RESTful API skeleton based on [Django Rest Framework](http://www.django-rest-framework.org).
+A Python3.x RESTful API skeleton based on [Django Rest Framework](http://www.django-rest-framework.org).
 
 ## Setup
 
