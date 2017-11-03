@@ -11,8 +11,22 @@ A Python3.x RESTful API skeleton based on [Django Rest Framework](http://www.dja
 5. `$ git clone git@github.com:ardentTech/django_api_skeleton.git .`
 6. `$ pip install -r requirements.txt`
 
+## Environment Variables and Secrets
+Create `api/env.py` contain all environment variables (database, smtp, etc.) and secrets (database password, django secret key, etc.):
+
+```
+ENV = {
+    "@todo_SECRET_KEY": "",
+    "@todo_DB_NAME": "",
+    "@todo_DB_PASSWORD": "",
+    "@todo_DB_USER": "",
+}
+```
+
+This file is ignored by Git, and is the first check for the `from_env` function in `api/api/settings/base.py` before falling back to `ENV`.
+
 ## Todo
 
-* How to generate the django secret key?
-* Instructions about creating env.py
-* bin/do script
+* Script to generate the Django secret key [@see](https://github.com/django/django/blob/master/django/utils/crypto.py)
+* Logging (use console logger for dev)
+* SMTP (use console for dev)
