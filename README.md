@@ -31,3 +31,4 @@ This file is ignored by Git, and is the first check for the `from_env` function 
 * Script to generate the Django secret key [@see](https://github.com/django/django/blob/master/django/utils/crypto.py)
 * Logging (use console logger for dev)
 * SMTP (use console for dev)
+* Replace all `@todo` with CLI-arg key
