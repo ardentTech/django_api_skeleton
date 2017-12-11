@@ -2,7 +2,7 @@ from django.db import models
 from django.utils.translation import ugettext_lazy as _
 
 
-class CreateMixin(models.Model):
+class CreatedMixin(models.Model):
     created = models.DateTimeField(
         _("created"),
         auto_now_add=True)
@@ -29,7 +29,7 @@ class TitleMixin(models.Model):
         abstract = True
 
 
-class UpdateMixin(models.Model):
+class UpdatedMixin(models.Model):
     updated = models.DateTimeField(
         _("updated"),
         auto_now=True)
