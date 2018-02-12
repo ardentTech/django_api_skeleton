@@ -58,6 +58,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     # 3rd party
     "corsheaders",
+    "django_filters",
     "rest_framework",
     # custom
     "util"
